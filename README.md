@@ -51,7 +51,7 @@ DECLARE
 BEGIN
     SELECT MAX(First_Name) INTO maxFirstName FROM Actor;
     SELECT MAX(Last_Name) INTO maxLastName FROM Actor;
-    
+
     RETURN maxFirstName || ' ' || maxLastName;
 END;
 $$ LANGUAGE plpgsql;
